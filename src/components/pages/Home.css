@@ -1,0 +1,22 @@
+.container__email {
+    background-color: #23303e;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email__link {
+    text-align: center;
+    color: #ffff;
+    width: 400px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s linear
+}
+
+.email__link:hover {
+    color: rgb(255, 196, 0);
+}

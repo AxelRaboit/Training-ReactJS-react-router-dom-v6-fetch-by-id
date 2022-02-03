@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Page.css';
+import './Home.css';
 
 function Home() {
     const [users, setUsers] = useState([]);
@@ -20,8 +21,8 @@ function Home() {
         <div className='container__page'>
         <h1>Liste des Utilisateurs</h1>
             {users.map(user => (
-                <div key={user.id}>
-                    <Link to={`/users/${user.id}`}>{user.email}</Link>
+                <div key={user.id} className="container__email">
+                    <Link className="email__link" to={`/users/${user.id}`}>{user.email}</Link>
                 </div>
             ))
 

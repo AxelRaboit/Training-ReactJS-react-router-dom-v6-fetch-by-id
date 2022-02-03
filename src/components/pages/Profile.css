@@ -1,0 +1,33 @@
+.container__card {
+    margin: 120px;
+    background-color: #23303e;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.profile__page {
+    display: flex;
+    justify-content:center;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.profile__picture {
+    border-radius: 5px;
+    width: 250px;
+}
+
+.container__data {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: grey;
+    border-radius: 5px;
+}

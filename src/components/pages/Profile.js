@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './Page.css';
+import './Profile.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import avatar from '../../images/avatar.png';
 
 function Profile() {
 
@@ -20,12 +21,17 @@ function Profile() {
     },[id])
 
     return (
-        <div className='container__page'>
-            <div key={user.id}>
-                <p>Id: {user.id}</p>
-                <p>Name: {user.name}</p>
-                <p>Username: {user.username}</p>
-                <p>Phone: {user.phone}</p>
+        <div className='container__page profile__page'>
+            <div className='container__card' key={user.id}>
+                <div className='card'>
+                    <img className='profile__picture' src={avatar} alt='picture profile'/>
+                    <div className='container__data'>
+                        <p><strong>Id:</strong> {user.id}</p>
+                        <p><strong>Name:</strong> {user.name}</p>
+                        <p><strong>Username:</strong> {user.username}</p>
+                        <p><strong>Phone:</strong> {user.phone}</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
