@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.container__page {
+    padding: 15px;
+    height: calc(100vh - 250px);
+}

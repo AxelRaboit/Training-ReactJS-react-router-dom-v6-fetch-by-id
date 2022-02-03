@@ -1,0 +1,28 @@
+.container__footer {
+    padding: 15px;
+    height: 200px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__sections {
+    display: flex;
+}
+
+.footer__section {
+    margin-right: 50px;
+}
+
+.footer__section li {
+    color: #ffff;
+    list-style-type: none;
+    margin-bottom: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.footer__section li:hover {
+    color: rgb(255, 196, 0);
+}
