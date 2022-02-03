@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 function Profile() {
 
-    const [data, setData] = useState([]);
+    const [user, setUser] = useState([]);
     const { id } = useParams();
     
     useEffect(() => {
@@ -13,18 +13,18 @@ function Profile() {
         const result = await axios(
           `https://jsonplaceholder.typicode.com/users/${id}`,
         )
-        setData(result.data);
+        setUser(result.data);
       };
       fetchData();
-    },[])
+    },[id])
 
     return (
         <div className='container__page'>
-            <div key={data.id}>
-                <p>Id: {data.id}</p>
-                <p>Name: {data.name}</p>
-                <p>Username: {data.username}</p>
-                <p>Phone: {data.phone}</p>
+            <div key={user.id}>
+                <p>Id: {user.id}</p>
+                <p>Name: {user.name}</p>
+                <p>Username: {user.username}</p>
+                <p>Phone: {user.phone}</p>
             </div>
         </div>
     )
